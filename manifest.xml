@@ -11,8 +11,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="CID Helper 2025-04-16"/>
   <Description DefaultValue="Assistant to start creating a CORE order."/>
-  <IconUrl DefaultValue="https://xsan4es.github.io/assets/logo-x32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://xsan4es.github.io/assets/logo-x64.png"/>
+  <IconUrl DefaultValue="https://xsan4es.github.io/addin/assets/logo-x32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://xsan4es.github.io/addin/assets/logo-x64.png"/>
   <SupportUrl DefaultValue="https://www.cid.uk.com/#feedback"/>
   <Hosts>
     <Host Name="Mailbox"/>
@@ -25,7 +25,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://xsan4es.github.io/"/>
+        <SourceLocation DefaultValue="https://xsan4es.github.io/addin/"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -72,12 +72,12 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16" DefaultValue="https://xsan4es.github.io/assets/logo-x16.png"/>
-        <bt:Image id="Icon.32" DefaultValue="https://xsan4es.github.io/assets/logo-x32.png"/>
-        <bt:Image id="Icon.80" DefaultValue="https://xsan4es.github.io/assets/logo-x80.png"/>
+        <bt:Image id="Icon.16" DefaultValue="https://xsan4es.github.io/addin/assets/logo-x16.png"/>
+        <bt:Image id="Icon.32" DefaultValue="https://xsan4es.github.io/addin/assets/logo-x32.png"/>
+        <bt:Image id="Icon.80" DefaultValue="https://xsan4es.github.io/addin/assets/logo-x80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://xsan4es.github.io/commands.html"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://xsan4es.github.io/addin/commands.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="CommandsGroup.Label" DefaultValue="CORE"/>
