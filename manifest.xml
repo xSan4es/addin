@@ -3,13 +3,13 @@
   xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
-  xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
+  xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.1"
   xsi:type="MailApp">
-  <Id>84171d11-e24c-4009-8334-a4ee849c3e15</Id>
-  <Version>1.0.0.1</Version>
+  <Id>a25210aa-750a-49a5-9a96-155371a62494</Id>
+  <Version>1.0.0.2</Version>
   <ProviderName>CID</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="CID Helper 2025-04-16"/>
+  <DisplayName DefaultValue="CID Helper 2025-04-17"/>
   <Description DefaultValue="Assistant to start creating a CORE order."/>
   <IconUrl DefaultValue="https://xsan4es.github.io/addin/assets/logo-x32.png"/>
   <HighResolutionIconUrl DefaultValue="https://xsan4es.github.io/addin/assets/logo-x64.png"/>
@@ -18,8 +18,8 @@
     <Host Name="Mailbox"/>
   </Hosts>
   <Requirements>
-    <Sets DefaultMinVersion="1.1">
-      <Set Name="Mailbox" MinVersion="1.1"/>
+    <Sets DefaultMinVersion="1.13">
+      <Set Name="Mailbox" MinVersion="1.13"/>
     </Sets>
   </Requirements>
   <FormSettings>
@@ -36,57 +36,60 @@
 	</Rule>
   <DisableEntityHighlighting>false</DisableEntityHighlighting>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
-    <Requirements>
-      <bt:Sets DefaultMinVersion="1.3">
-        <bt:Set Name="Mailbox"/>
-      </bt:Sets>
-    </Requirements>
-    <Hosts>
-      <Host xsi:type="MailHost">
-        <DesktopFormFactor>
-          <FunctionFile resid="Commands.Url"/>
-					<ExtensionPoint xsi:type="MessageReadCommandSurface">
-						<OfficeTab id="TabDefault">
-							<Group id="msgReadGroup">
-								<Label resid="CommandsGroup.Label"/>
-								<Control xsi:type="Button" id="msgReadButtonRedirect">
-									<Label resid="ReadRedirectButton.Label"/>
-									<Supertip>
-										<Title resid="ReadRedirectButton.SupertipTitle"/>
-										<Description resid="ReadRedirectButton.SupertipText"/>
-									</Supertip>
-									<Icon>
-										<bt:Image size="16" resid="Icon.16"/>
-										<bt:Image size="32" resid="Icon.32"/>
-										<bt:Image size="80" resid="Icon.80"/>
-									</Icon>
-									<Action xsi:type="ExecuteFunction">
-										<FunctionName>openCoreCreateJobPage</FunctionName>
-									</Action>
-								</Control>
-							</Group>
-						</OfficeTab>
-					</ExtensionPoint>
-				</DesktopFormFactor>
-      </Host>
-    </Hosts>
-    <Resources>
-      <bt:Images>
-        <bt:Image id="Icon.16" DefaultValue="https://xsan4es.github.io/addin/assets/logo-x16.png"/>
-        <bt:Image id="Icon.32" DefaultValue="https://xsan4es.github.io/addin/assets/logo-x32.png"/>
-        <bt:Image id="Icon.80" DefaultValue="https://xsan4es.github.io/addin/assets/logo-x80.png"/>
-      </bt:Images>
-      <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://xsan4es.github.io/addin/commands.html"/>
-      </bt:Urls>
-      <bt:ShortStrings>
-        <bt:String id="CommandsGroup.Label" DefaultValue="CORE"/>
-        <bt:String id="ReadRedirectButton.Label" DefaultValue="Redirect"/>
-        <bt:String id="ReadRedirectButton.SupertipTitle" DefaultValue="CORE"/>
-      </bt:ShortStrings>
-      <bt:LongStrings>
-        <bt:String id="ReadRedirectButton.SupertipText" DefaultValue="open an order creation page"/>
-      </bt:LongStrings>
-    </Resources>
+    <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1" xsi:type="VersionOverridesV1_1">
+      <Requirements>
+        <bt:Sets DefaultMinVersion="1.13">
+          <bt:Set Name="Mailbox"/>
+        </bt:Sets>
+      </Requirements>
+      <Hosts>
+        <Host xsi:type="MailHost">
+          <DesktopFormFactor>
+            <SupportsSharedFolders>true</SupportsSharedFolders>
+            <FunctionFile resid="Commands.Url"/>
+            <ExtensionPoint xsi:type="MessageReadCommandSurface">
+              <OfficeTab id="TabDefault">
+                <Group id="msgReadGroup">
+                  <Label resid="CommandsGroup.Label"/>
+                  <Control xsi:type="Button" id="msgReadButtonRedirect">
+                    <Label resid="ReadRedirectButton.Label"/>
+                    <Supertip>
+                      <Title resid="ReadRedirectButton.SupertipTitle"/>
+                      <Description resid="ReadRedirectButton.SupertipText"/>
+                    </Supertip>
+                    <Icon>
+                      <bt:Image size="16" resid="Icon.16"/>
+                      <bt:Image size="32" resid="Icon.32"/>
+                      <bt:Image size="80" resid="Icon.80"/>
+                    </Icon>
+                    <Action xsi:type="ExecuteFunction">
+                      <FunctionName>openCoreCreateJobPage</FunctionName>
+                    </Action>
+                  </Control>
+                </Group>
+              </OfficeTab>
+            </ExtensionPoint>
+          </DesktopFormFactor>
+        </Host>
+      </Hosts>
+      <Resources>
+        <bt:Images>
+          <bt:Image id="Icon.16" DefaultValue="https://xsan4es.github.io/addin/assets/logo-x16.png"/>
+          <bt:Image id="Icon.32" DefaultValue="https://xsan4es.github.io/addin/assets/logo-x32.png"/>
+          <bt:Image id="Icon.80" DefaultValue="https://xsan4es.github.io/addin/assets/logo-x80.png"/>
+        </bt:Images>
+        <bt:Urls>
+          <bt:Url id="Commands.Url" DefaultValue="https://xsan4es.github.io/addin/commands.html"/>
+        </bt:Urls>
+        <bt:ShortStrings>
+          <bt:String id="CommandsGroup.Label" DefaultValue="CORE"/>
+          <bt:String id="ReadRedirectButton.Label" DefaultValue="Redirect"/>
+          <bt:String id="ReadRedirectButton.SupertipTitle" DefaultValue="CORE"/>
+        </bt:ShortStrings>
+        <bt:LongStrings>
+          <bt:String id="ReadRedirectButton.SupertipText" DefaultValue="open an order creation page"/>
+        </bt:LongStrings>
+      </Resources>
+    </VersionOverrides>
   </VersionOverrides>
 </OfficeApp>
