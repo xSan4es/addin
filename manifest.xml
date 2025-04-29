@@ -5,11 +5,11 @@
   xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
   xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.1"
   xsi:type="MailApp">
-  <Id>a25210aa-750a-49a5-9a96-155371a62494</Id>
-  <Version>1.0.0.2</Version>
+  <Id>f41c4393-5883-47ce-aef7-434b248cdcad</Id>
+  <Version>1.0.0.5</Version>
   <ProviderName>CID</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="CID Helper 2025-04-17"/>
+  <DisplayName DefaultValue="UK CORE"/>
   <Description DefaultValue="Assistant to start creating a CORE order."/>
   <IconUrl DefaultValue="https://xsan4es.github.io/addin/assets/logo-x32.png"/>
   <HighResolutionIconUrl DefaultValue="https://xsan4es.github.io/addin/assets/logo-x64.png"/>

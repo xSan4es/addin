@@ -1,0 +1,1 @@
+window.appConfig={CoreUrl:"https://core.cid-uk.com",InternalUrl:"https://api-gateway-dev.com/api/internal-api",IdentityUrl:"https://api-gateway-dev.com/api/identity-service"};
