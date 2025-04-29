@@ -5,7 +5,7 @@
   xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
   xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.1"
   xsi:type="MailApp">
-  <Id>f41c4393-5883-47ce-aef7-434b248cdcad</Id>
+  <Id>eea1c037-b786-44b9-b0c7-6518cb7e336d</Id>
   <Version>1.0.0.5</Version>
   <ProviderName>CID</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
