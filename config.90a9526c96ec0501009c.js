@@ -1,1 +1,1 @@
-window.appConfig={CoreUrl:"https://core.cid-uk.com",InternalUrl:"https://api-gateway.cid-uk.com/api/internal-api",IdentityUrl:"https://identity-service.cid-uk.com/api"};
+window.appConfig={CoreUrl:"https://core.cid-uk.com",InternalUrl:"https://api-gateway.cid-uk.com/api/internal-api",IdentityUrl:"https://identity-service.cid-uk.com/api",ElasticSearchUrl:"https://api-gateway.cid-uk.com/api/elastic-search"};
