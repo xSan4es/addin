@@ -1,0 +1,1 @@
+window.appConfig={CoreUrl:"https://core.cid-uk.com",EmailApiUrl:"https://api-gateway.cid-uk.com/api/email-service",InternalApiUrl:"https://api-gateway.cid-uk.com/api/internal-api",IdentityApiUrl:"https://api-gateway.cid-uk.com/api/identity-service",ElasticSearchUrl:"https://api-gateway.cid-uk.com/api/elastic-search"};
